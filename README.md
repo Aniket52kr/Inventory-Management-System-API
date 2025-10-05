@@ -8,10 +8,10 @@ Built with **Node.js**, **Express**, and **MySQL**.
 
 ## 🛠️ Tech Stack
 
-- **Runtime**: Node.js (v18+)
+- **Runtime**: Node.js 
 - **Framework**: Express.js
-- **Database**: MySQL (v5.7+ or MariaDB)
-- **Driver**: `mysql2` (with Promise support)
+- **Database**: MySQL 
+- **Driver**: `mysql2` 
 - **Architecture**: MVC-inspired (Routes → Controllers → Models)
 
 ---
