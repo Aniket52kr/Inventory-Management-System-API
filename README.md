@@ -16,6 +16,27 @@ Built with **Node.js**, **Express**, and **MySQL**.
 
 ---
 
+
+## Assumptions & Design Choices
+
+- Stock updates are NOT allowed via general product update
+→ Stock changes must go through dedicated /increase and /decrease endpoints to enforce business rules.
+
+- Stock operations are atomic and race-condition safe
+→ Uses MySQL transactions with FOR UPDATE row locking during stock decrease.
+
+- Input validation is centralized in middleware
+→ Controllers assume valid input, improving readability and testability.
+
+- All errors are standardized
+→ Custom error classes (InsufficientStockError, etc.) ensure consistent HTTP responses.
+
+- No authentication
+→ Assumed to be handled by a gateway or added later; focus is on core inventory logic.
+
+
+---
+
 ## 🗃️ Database Schema
 
 Run the following SQL to set up your database:
