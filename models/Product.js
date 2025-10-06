@@ -1,4 +1,3 @@
-// models/Product.js
 const db = require('../config/db');
 const { InsufficientStockError } = require('../utils/errors');
 

@@ -1,4 +1,3 @@
-// controllers/productController.js
 const Product = require('../models/Product');
 const { InsufficientStockError } = require('../utils/errors');
 

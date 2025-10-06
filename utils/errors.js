@@ -1,5 +1,3 @@
-// utils/errors.js
-
 class InsufficientStockError extends Error {
   constructor(message) {
     super(message);

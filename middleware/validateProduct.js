@@ -1,4 +1,3 @@
-// middleware/validateProduct.js
 const { ValidationError } = require('../utils/errors');
 
 // Helper: check if value is a non-empty string

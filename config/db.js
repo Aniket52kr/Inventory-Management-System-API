@@ -17,10 +17,10 @@ const pool = mysql.createPool({
 (async () => {
   try {
     const connection = await pool.getConnection();
-    console.log('✅ Connected to MySQL database');
+    console.log('Connected to MySQL database');
     connection.release();
   } catch (error) {
-    console.error('❌ Failed to connect to MySQL:', error.message);
+    console.error('Failed to connect to MySQL:', error.message);
     process.exit(1); // Exit if DB connection fails
   }
 })();
